@@ -19,11 +19,7 @@
 <body>
   <div class="container">
     <div class="heading">
-      <h1 class="title">2048</h1>
-      <div class="scores-container">
-        <div class="score-container">0</div>
-        <div class="best-container">0</div>
-      </div>
+      <h1 class="title">2048-i</h1>
     </div>
 
     <div class="above-game">
@@ -72,22 +68,30 @@
       </div>
     </div>
 
-    <p class="game-explanation">
-      <strong class="important">How to play:</strong> Use your <strong>arrow keys</strong> to move the tiles. When two tiles with the same number touch, they <strong>merge into one!</strong>
-    </p>
-    <hr>
     <p>
-    <strong class="important">Note:</strong> This site is the official version of 2048. You can play it on your phone via <a href="http://git.io/2048">http://git.io/2048.</a> All other apps or sites are derivatives or fakes, and should be used with caution.
+      Created by <a href="http://gabrielecirulli.com" target="_blank">Gabriele Cirulli.</a>
+      AI by <a href="http://antoine.toubhans.org" target="_blank">Antoine Toubhans.</a>
     </p>
-    <hr>
-    <p>
-    Created by <a href="http://gabrielecirulli.com" target="_blank">Gabriele Cirulli.</a> Based on <a href="https://itunes.apple.com/us/app/1024!/id823499224" target="_blank">1024 by Veewo Studio</a> and conceptually similar to <a href="http://asherv.com/threes/" target="_blank">Threes by Asher Vollmer.</a>
-    </p>
+    <div>
+      <div class="scores-container">
+        <div class="ai-container ai-number-of-games-container">-</div>
+        <div class="score-container">-</div>
+        <div class="ai-container ai-best-brick-container">-</div>
+      </div>
+      <div class="scores-container">
+        <div class="best-container">-</div>
+        <div class="ai-container ai-best-best-brick-container">-</div>
+        <div class="ai-container ai-mean-score-container">-</div>
+        <div class="ai-container ai-mean-best-brick-container">-</div>
+      </div>
+    </div>
   </div>
 
   <script src="js/bind_polyfill.js"></script>
   <script src="js/classlist_polyfill.js"></script>
   <script src="js/animframe_polyfill.js"></script>
+  <script src="js/strategies.js"></script>
+  <script src="js/ia_manager.js"></script>
   <script src="js/keyboard_input_manager.js"></script>
   <script src="js/html_actuator.js"></script>
   <script src="js/grid.js"></script>

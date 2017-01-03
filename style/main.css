@@ -50,11 +50,13 @@ h1.title {
   float: right;
   text-align: right; }
 
-.score-container, .best-container {
+.score-container,
+.best-container,
+.ai-container {
   position: relative;
   display: inline-block;
   background: #bbada0;
-  padding: 15px 25px;
+  padding: 15px 20px;
   font-size: 25px;
   height: 25px;
   line-height: 47px;
@@ -62,38 +64,70 @@ h1.title {
   border-radius: 3px;
   color: white;
   margin-top: 8px;
-  text-align: center; }
-  .score-container:after, .best-container:after {
-    position: absolute;
-    width: 100%;
-    top: 10px;
-    left: 0;
-    text-transform: uppercase;
-    font-size: 13px;
-    line-height: 13px;
-    text-align: center;
-    color: #eee4da; }
-  .score-container .score-addition, .best-container .score-addition {
-    position: absolute;
-    right: 30px;
-    color: red;
-    font-size: 25px;
-    line-height: 25px;
-    font-weight: bold;
-    color: rgba(119, 110, 101, 0.9);
-    z-index: 100;
-    -webkit-animation: move-up 600ms ease-in;
-    -moz-animation: move-up 600ms ease-in;
-    animation: move-up 600ms ease-in;
-    -webkit-animation-fill-mode: both;
-    -moz-animation-fill-mode: both;
-    animation-fill-mode: both; }
+  text-align: center;
+  min-width: 80px;
+}
+.score-container:after,
+.best-container:after,
+.ai-container:after {
+  position: absolute;
+  width: 100%;
+  top: 10px;
+  left: 0;
+  text-transform: uppercase;
+  font-size: 13px;
+  line-height: 13px;
+  text-align: center;
+  color: #eee4da;
+}
+.score-container .score-addition, .best-container .score-addition {
+  position: absolute;
+  right: 30px;
+  color: red;
+  font-size: 25px;
+  line-height: 25px;
+  font-weight: bold;
+  color: rgba(119, 110, 101, 0.9);
+  z-index: 100;
+  -webkit-animation: move-up 600ms ease-in;
+  -moz-animation: move-up 600ms ease-in;
+  animation: move-up 600ms ease-in;
+  -webkit-animation-fill-mode: both;
+  -moz-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
 
 .score-container:after {
-  content: "Score"; }
+  content: "Score";
+}
+
+.ai-best-brick-container:after {
+  content: "Best brick";
+}
 
 .best-container:after {
-  content: "Best"; }
+  content: "Best score";
+}
+
+.ai-number-of-games-container:after {
+  content: "# Games";
+}
+
+.ai-mean-score-container:after {
+  content: "Mean score";
+}
+
+.ai-best-score-container:after {
+  content: "Best score";
+}
+
+.ai-mean-best-brick-container:after {
+  content: "Mean best brick";
+}
+
+.ai-best-best-brick-container:after {
+  content: "Best best brick";
+}
 
 p {
   margin-top: 0;
