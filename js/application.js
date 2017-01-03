@@ -6,6 +6,6 @@ window.requestAnimationFrame(function () {
 
   game = new GameManager(4, keyboardInputManager, htmlActuator, localStorageManager);
 
-  strategyManager = new DumbStrategy();
+  strategyManager = new LessDumbStrategy();
   iaManager = new IAManager(localStorageManager, keyboardInputManager, strategyManager);
 });
